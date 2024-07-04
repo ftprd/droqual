@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&family=Zen+Kaku+Gothic+New:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #000;
+  overflow: hidden;
+}
+
+html {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100dvh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #bbb;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #222;
+}
+
+div {
+  position: relative;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  width: 43vw;
+  aspect-ratio: 1/1;
+  max-height: 95dvh;
+}
+div.input {
+  border-radius: 100px;
+  border: 2px #aaa dashed;
+  box-sizing: border-box;
+}
+div.input .draghere {
+  position: absolute;
+  top: 10px;
+  font-size: 1.2rem;
+  font-family: "zen kaku gothic new", sans-serif;
+  color: rgba(0, 0, 0, 0.2);
+}
+div.input p.ttl {
+  font-size: 5rem;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 700;
+  background-image: linear-gradient(to right bottom, #005, #500);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+div.input p.sttl {
+  font-family: "ubuntu", "zen kaku gothic new", sans-serif;
+  text-align: center;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.4666666667);
+}
+div.input input#input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  aspect-ratio: 1/1;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+div.input label {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  z-index: 2;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+div.input label[class*=range] {
+  width: 50%;
+  bottom: 70px;
+}
+div.input label[class*=range] input#range {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+div.input label span {
+  display: block;
+  font-family: "ubuntu", "zen kaku gothic new", sans-serif;
+  font-size: 1.3rem;
+}
+div.input label input#width {
+  display: block;
+  width: 50%;
+  height: 30px;
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  background-color: transparent;
+  padding-inline: 0.5em;
+  box-sizing: border-box;
+}
+div.input label input#width::-webkit-inner-spin-button, div.input label input#width::-webkit-outer-spin-button {
+  display: none;
+}
+div.output img#output {
+  pointer-events: none;
+  width: 43vw;
+}
+div.output a {
+  display: none;
+  transition: all 0.2s ease-out;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.6666666667);
+  border-radius: 10px;
+  color: #fff;
+  font-family: "ubuntu", sans-serif;
+  font-size: 1.2rem;
+}
+div.output a svg {
+  width: 28px;
+  fill: #fff;
+}
+
+a.link {
+  display: block;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+a.link img {
+  display: block;
+  width: 50px;
+}/*# sourceMappingURL=style.css.map */
